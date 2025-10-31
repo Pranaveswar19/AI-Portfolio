@@ -7,6 +7,7 @@ import { Skills } from "@/components/skills";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 import { TechBackground } from "@/components/tech-background";
+import { Chatbot } from "@/components/chatbot";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Skills />
       <Contact />
       <Footer />
+      <Chatbot />
     </main>
   );
 }

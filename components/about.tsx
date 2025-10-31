@@ -2,76 +2,76 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Calendar, Code2, Zap, Brain } from "lucide-react";
+import { Code2, Zap, Brain } from "lucide-react";
 
 const timeline = [
   {
     phase: "Foundation",
     title: "Data Science Course",
-    description: "Completed comprehensive data science fundamentals and Python programming",
+    description: "Data science fundamentals & Python",
     icon: "📊",
     color: "from-blue-500 to-indigo-500"
   },
   {
     phase: "Introduction",
-    title: "Professional Introduction Video",
-    description: "Created professional introduction showcasing skills and passion for AI",
+    title: "Professional Intro",
+    description: "Showcased skills & AI passion",
     icon: "🎥",
     color: "from-purple-500 to-pink-500"
   },
   {
     phase: "Training",
     title: "Vibe Coding Course",
-    description: "Mastered AI-assisted development and rapid prototyping techniques",
+    description: "AI-assisted rapid prototyping",
     icon: "💻",
     color: "from-cyan-500 to-blue-500"
   },
   {
-    phase: "Automation",
+    phase: "Exploration",
     title: "Automation Arena",
-    description: "Built automation workflows and explored AI-powered tools",
+    description: "AI-powered automation workflows",
     icon: "🤖",
     color: "from-green-500 to-teal-500"
   },
   {
-    phase: "Project 1",
+    phase: "Content AI",
     title: "AI Transcript Agent",
-    description: "Multi-platform content repurposing system with AI agents",
+    description: "Multi-platform content system",
     icon: "📝",
     color: "from-blue-500 to-indigo-500"
   },
   {
-    phase: "Project 2",
+    phase: "Research",
     title: "AI Influencer Tracker",
-    description: "Research & collect data on 60+ AI influencers using automation",
+    description: "60+ AI influencer research",
     icon: "🎯",
     color: "from-green-500 to-emerald-500"
   },
   {
-    phase: "Project 3",
+    phase: "Analysis",
     title: "Stack Showdown",
-    description: "Compare MERN vs Next.js, Remix & Astro for AI apps",
+    description: "AI stack comparison analysis",
     icon: "⚔️",
     color: "from-teal-500 to-cyan-500"
   },
   {
-    phase: "Project 4",
+    phase: "Technical Writing",
     title: "AI Content Forge",
-    description: "Write SEO-friendly technical content for ORANTS website",
+    description: "SEO technical content creation",
     icon: "✍️",
     color: "from-emerald-500 to-green-500"
   },
   {
-    phase: "Project 5",
-    title: "Vibe Coding Sprint (ChefGPT)",
-    description: "Create mobile app using AI vibe coding tools in 3 days",
+    phase: "Sprint Build",
+    title: "ChefGPT Sprint",
+    description: "3-day mobile app build",
     icon: "⚡",
     color: "from-green-400 to-teal-500"
   },
   {
-    phase: "Project 6",
-    title: "Viral Content Replicator",
-    description: "AI agent generating viral LinkedIn posts with 100/100 scores",
+    phase: "Viral Engine",
+    title: "Viral Replicator",
+    description: "100/100 LinkedIn post AI",
     icon: "🚀",
     color: "from-purple-500 to-pink-500"
   }
@@ -91,8 +91,14 @@ export function About() {
 
   return (
     <section id="about" className="py-20 relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/5 to-transparent pointer-events-none" />
+      {/* Pirate Map Background */}
+      <div className="absolute inset-0 pointer-events-none opacity-10">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent" />
+        <div className="absolute inset-0" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4a574' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundSize: '60px 60px'
+        }} />
+      </div>
       
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
@@ -130,7 +136,7 @@ export function About() {
           ))}
         </motion.div>
 
-        {/* Interactive Roadmap */}
+        {/* Guided Internship Journey Map */}
         <div className="max-w-6xl mx-auto">
           <motion.h3
             initial={{ opacity: 0 }}
@@ -141,54 +147,258 @@ export function About() {
             Guided Internship Journey
           </motion.h3>
 
-          {/* Roadmap Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-            {timeline.map((item, index) => (
+          {/* Dark Blue Tech Background Container */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={inView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ delay: 0.4, duration: 0.6 }}
+            className="relative rounded-2xl overflow-hidden shadow-2xl"
+            style={{
+              background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%)',
+              boxShadow: '0 25px 50px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05)',
+            }}
+          >
+            {/* Animated Floating Tech Doodles */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              {/* Floating Robot */}
               <motion.div
-                key={item.phase}
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: 0.1 * index, duration: 0.5 }}
-                whileHover={{
-                  scale: 1.05,
-                  rotate: [0, -1, 1, 0],
-                  transition: { duration: 0.3 }
+                className="absolute text-4xl opacity-20"
+                style={{ left: '10%', top: '15%' }}
+                animate={{
+                  y: [0, -20, 0],
+                  rotate: [0, 5, -5, 0],
+                  x: [0, 10, 0]
                 }}
-                className="glass rounded-2xl p-6 hover:glow transition-all duration-300 cursor-pointer group relative overflow-hidden"
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
               >
-                {/* Hover gradient effect */}
-                <div className={`absolute inset-0 bg-gradient-to-r ${item.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
-
-                {/* Step number */}
-                <div className="absolute top-2 right-2 w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center text-xs font-bold text-purple-300 border border-purple-500/30">
-                  {index + 1}
-                </div>
-
-                {/* Icon */}
-                <motion.div
-                  whileHover={{ rotate: 360 }}
-                  transition={{ duration: 0.5 }}
-                  className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r ${item.color} flex items-center justify-center text-3xl shadow-lg group-hover:shadow-2xl`}
-                >
-                  {item.icon}
-                </motion.div>
-
-                {/* Content */}
-                <div className="text-center relative z-10">
-                  <div className="text-xs text-purple-400 font-semibold mb-2 uppercase tracking-wide">{item.phase}</div>
-                  <h4 className="text-sm font-bold mb-2 text-white group-hover:text-purple-200 transition-colors">{item.title}</h4>
-                  <p className="text-gray-400 text-xs leading-relaxed group-hover:text-gray-300 transition-colors">{item.description}</p>
-                </div>
-
-                {/* Connection line indicator */}
-                {index < timeline.length - 1 && (
-                  <div className="hidden lg:block absolute -right-2 top-1/2 transform translate-x-full -translate-y-1/2">
-                    <div className="w-4 h-0.5 bg-gradient-to-r from-purple-500 to-transparent" />
-                  </div>
-                )}
+                🤖
               </motion.div>
-            ))}
-          </div>
+
+              {/* Floating CPU */}
+              <motion.div
+                className="absolute text-3xl opacity-15"
+                style={{ right: '15%', top: '20%' }}
+                animate={{
+                  y: [0, 15, 0],
+                  rotate: [0, -10, 0],
+                  scale: [1, 1.1, 1]
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.5
+                }}
+              >
+                💻
+              </motion.div>
+
+              {/* Floating Gear */}
+              <motion.div
+                className="absolute text-3xl opacity-10"
+                style={{ left: '80%', top: '50%' }}
+                animate={{
+                  rotate: [0, 360],
+                  y: [0, -15, 0],
+                  scale: [1, 1.2, 1]
+                }}
+                transition={{
+                  duration: 8,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+              >
+                ⚙️
+              </motion.div>
+
+              {/* Floating Brain */}
+              <motion.div
+                className="absolute text-3xl opacity-15"
+                style={{ left: '5%', bottom: '20%' }}
+                animate={{
+                  y: [0, -25, 0],
+                  x: [0, 15, 0],
+                  rotate: [0, 10, -10, 0]
+                }}
+                transition={{
+                  duration: 7,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 1
+                }}
+              >
+                🧠
+              </motion.div>
+
+              {/* Floating Circuit */}
+              <motion.div
+                className="absolute text-2xl opacity-10"
+                style={{ right: '10%', bottom: '25%' }}
+                animate={{
+                  y: [0, 20, 0],
+                  rotate: [0, -15, 15, 0],
+                  scale: [1, 0.9, 1]
+                }}
+                transition={{
+                  duration: 6.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 1.5
+                }}
+              >
+                🔌
+              </motion.div>
+
+              {/* Floating Rocket */}
+              <motion.div
+                className="absolute text-3xl opacity-15"
+                style={{ left: '70%', bottom: '15%' }}
+                animate={{
+                  y: [0, -30, 0],
+                  x: [0, -10, 0],
+                  rotate: [0, 5, 0]
+                }}
+                transition={{
+                  duration: 5.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.8
+                }}
+              >
+                🚀
+              </motion.div>
+
+              {/* Floating Light Bulb */}
+              <motion.div
+                className="absolute text-3xl opacity-12"
+                style={{ left: '25%', top: '60%' }}
+                animate={{
+                  y: [0, -18, 0],
+                  scale: [1, 1.15, 1],
+                  opacity: [0.12, 0.2, 0.12]
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 2
+                }}
+              >
+                💡
+              </motion.div>
+
+              {/* Floating Code Symbol */}
+              <motion.div
+                className="absolute text-2xl opacity-10"
+                style={{ right: '25%', top: '40%' }}
+                animate={{
+                  y: [0, 12, 0],
+                  rotate: [0, 360],
+                  x: [0, -8, 0]
+                }}
+                transition={{
+                  duration: 9,
+                  repeat: Infinity,
+                  ease: "linear",
+                  delay: 1.2
+                }}
+              >
+                ⚡
+              </motion.div>
+            </div>
+
+            {/* Grid pattern overlay */}
+            <div className="absolute inset-0 opacity-[0.03]"
+              style={{
+                backgroundImage: `linear-gradient(rgba(59, 130, 246, 0.3) 1px, transparent 1px),
+                                 linear-gradient(90deg, rgba(59, 130, 246, 0.3) 1px, transparent 1px)`,
+                backgroundSize: '50px 50px'
+              }}
+            />
+
+            {/* Main content area */}
+            <div className="relative p-12">
+              {/* Waypoints in grid layout */}
+              <div className="relative grid grid-cols-3 gap-y-12 gap-x-8" style={{ zIndex: 1 }}>
+                {timeline.map((item, index) => (
+                  <motion.div
+                    key={item.phase}
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={inView ? { opacity: 1, scale: 1 } : {}}
+                    transition={{ 
+                      delay: 0.8 + (0.15 * index), 
+                      duration: 0.4,
+                      type: "spring",
+                      stiffness: 150
+                    }}
+                    whileHover={{
+                      scale: 1.08,
+                      y: -5,
+                      transition: { duration: 0.2 }
+                    }}
+                    className="relative group cursor-pointer"
+                  >
+                    {/* Waypoint Box with Dotted Border */}
+                    <div 
+                      className="rounded-xl p-5 transition-all duration-300 relative backdrop-blur-sm"
+                      style={{
+                        background: 'rgba(30, 41, 59, 0.8)',
+                        border: '2.5px dashed rgba(59, 130, 246, 0.4)',
+                        boxShadow: '0 4px 16px rgba(59, 130, 246, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.05)',
+                      }}
+                    >
+                      {/* Hover glow effect */}
+                      <motion.div 
+                        className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300"
+                        whileHover={{ boxShadow: '0 0 30px rgba(59, 130, 246, 0.3)' }}
+                      />
+                      
+                      {/* Icon */}
+                      <motion.div
+                        whileHover={{ rotate: [0, -8, 8, 0], scale: 1.15 }}
+                        transition={{ duration: 0.5 }}
+                        className="w-14 h-14 mx-auto mb-3 rounded-full flex items-center justify-center text-3xl relative"
+                        style={{
+                          background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)',
+                          boxShadow: '0 4px 12px rgba(59, 130, 246, 0.4)'
+                        }}
+                      >
+                        <span className="relative z-10">{item.icon}</span>
+                        <motion.div
+                          className="absolute inset-0 rounded-full"
+                          animate={{
+                            boxShadow: [
+                              '0 0 20px rgba(59, 130, 246, 0.4)',
+                              '0 0 30px rgba(139, 92, 246, 0.6)',
+                              '0 0 20px rgba(59, 130, 246, 0.4)'
+                            ]
+                          }}
+                          transition={{ duration: 2, repeat: Infinity }}
+                        />
+                      </motion.div>
+
+                      {/* Content */}
+                      <div className="text-center relative z-10">
+                        <div className="text-[9px] font-bold mb-1 uppercase tracking-widest text-blue-400">
+                          {item.phase}
+                        </div>
+                        <h4 className="text-sm font-bold mb-1.5 leading-tight text-white group-hover:text-blue-300 transition-colors">
+                          {item.title}
+                        </h4>
+                        <p className="text-[10px] leading-snug text-gray-400 group-hover:text-gray-300 transition-colors">
+                          {item.description}
+                        </p>
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
         </div>
 
         {/* About Text */}
@@ -198,7 +408,7 @@ export function About() {
           transition={{ delay: 0.8 }}
           className="max-w-3xl mx-auto mt-16 text-center"
         >
-          <div className="glass rounded-2xl p-8">
+          <div className="glass rounded-2xl p-8 border-2 border-amber-900/20">
             <h3 className="text-2xl font-bold mb-4 gradient-text">About This Portfolio</h3>
             <p className="text-gray-300 leading-relaxed mb-4 font-medium">
               This portfolio represents my journey as an AI Engineer during a guided internship at ORANTS, where I completed 6 production-ready projects
