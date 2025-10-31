@@ -163,3 +163,9 @@ Feel free to reach out for collaborations or opportunities!
 ---
 
 Built with ❤️ during AI Engineer Internship @ ORANTS
+
+## 🤖 New Features (Latest Update)
+
+- **AI Chatbot** - Interactive assistant powered by OpenAI GPT-4
+- **Video Showcase** - Collapsible section for project demonstrations
+- **Redesigned Journey** - Modern dark-themed internship roadmap
