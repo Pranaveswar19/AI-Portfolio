@@ -67,7 +67,7 @@ export function Skills() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl font-bold mb-4 gradient-text">Skills & Technologies</h2>
-          <p className="text-white text-lg max-w-2xl mx-auto font-medium">
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto font-medium">
             Technical expertise gained through hands-on project development
           </p>
         </motion.div>
@@ -87,19 +87,19 @@ export function Skills() {
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skill.name}>
                     <div className="flex justify-between mb-2">
-                      <span className="text-white font-medium">{skill.name}</span>
-                      <span className="text-white font-medium">{skill.level}%</span>
+                      <span className="text-gray-200 font-medium">{skill.name}</span>
+                      <span className="text-purple-400 font-medium">{skill.level}%</span>
                     </div>
-                    <div className="h-2 bg-white/5 rounded-full overflow-hidden">
+                    <div className="h-2 bg-purple-900/20 rounded-full overflow-hidden border border-purple-500/20">
                       <motion.div
                         initial={{ width: 0 }}
                         animate={inView ? { width: `${skill.level}%` } : {}}
-                        transition={{ 
+                        transition={{
                           delay: 0.2 * categoryIndex + 0.1 * skillIndex,
                           duration: 1,
                           ease: "easeOut"
                         }}
-                        className={`h-full bg-gradient-to-r ${category.color} rounded-full`}
+                        className={`h-full bg-gradient-to-r ${category.color} rounded-full shadow-[0_0_10px_rgba(147,51,234,0.5)]`}
                       />
                     </div>
                   </div>
@@ -129,7 +129,7 @@ export function Skills() {
                 animate={inView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ delay: 0.05 * index }}
                 whileHover={{ scale: 1.1, rotate: 5 }}
-                className="px-6 py-3 glass rounded-full text-sm font-medium hover:glow transition-all duration-300 cursor-default text-white"
+                className="px-6 py-3 glass rounded-full text-sm font-medium hover:glow transition-all duration-300 cursor-default text-gray-300 hover:text-white"
               >
                 {tool}
               </motion.div>

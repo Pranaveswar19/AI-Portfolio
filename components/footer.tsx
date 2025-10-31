@@ -18,7 +18,7 @@ export function Footer() {
             className="text-center md:text-left"
           >
             <div className="text-2xl font-bold gradient-text mb-2">AI Engineer Portfolio</div>
-            <p className="text-white text-sm font-medium">
+            <p className="text-gray-400 text-sm font-medium">
               Built with Next.js, Framer Motion & Three.js
             </p>
           </motion.div>
@@ -34,7 +34,7 @@ export function Footer() {
               href="https://github.com/Pranaveswar19"
               target="_blank"
               rel="noopener noreferrer"
-              className="glass p-3 rounded-full hover:glow transition-all duration-300"
+              className="glass p-3 rounded-full hover:glow transition-all duration-300 text-purple-300 hover:text-white"
             >
               <Github className="w-5 h-5" />
             </a>
@@ -42,13 +42,13 @@ export function Footer() {
               href="https://www.linkedin.com/in/pranaveswar"
               target="_blank"
               rel="noopener noreferrer"
-              className="glass p-3 rounded-full hover:glow transition-all duration-300"
+              className="glass p-3 rounded-full hover:glow-blue transition-all duration-300 text-blue-300 hover:text-white"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a
               href="mailto:mpranaveswar@gmail.com"
-              className="glass p-3 rounded-full hover:glow transition-all duration-300"
+              className="glass p-3 rounded-full hover:glow-cyan transition-all duration-300 text-cyan-300 hover:text-white"
             >
               <Mail className="w-5 h-5" />
             </a>
@@ -61,7 +61,7 @@ export function Footer() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-center md:text-right"
           >
-            <p className="text-white text-xs font-medium">
+            <p className="text-gray-400 text-xs font-medium">
               © {currentYear} All rights reserved
             </p>
           </motion.div>
@@ -74,7 +74,7 @@ export function Footer() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-8 pt-8 border-t border-white/5 text-center"
         >
-          <p className="text-white text-xs font-medium">
+          <p className="text-gray-400 text-xs font-medium">
             Internship Portfolio Showcase • AI Engineer • Full Stack Developer
           </p>
         </motion.div>

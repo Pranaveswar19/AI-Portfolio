@@ -49,7 +49,7 @@ export function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl font-bold mb-4 gradient-text">Contact Information</h2>
-          <p className="text-white text-lg max-w-2xl mx-auto font-medium">
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto font-medium">
             Let's collaborate on your next AI project or discuss opportunities
           </p>
         </motion.div>
@@ -67,11 +67,11 @@ export function Contact() {
               whileHover={{ scale: 1.05, y: -10 }}
               className="glass rounded-2xl p-8 hover:glow transition-all duration-300 text-center"
             >
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center">
-                <Mail className="w-8 h-8" />
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center shadow-[0_0_20px_rgba(147,51,234,0.5)]">
+                <Mail className="w-8 h-8 text-white" />
               </div>
-              <div className="text-sm text-white mb-2 font-medium">Email</div>
-              <div className="font-medium text-sm text-white">mpranaveswar@gmail.com</div>
+              <div className="text-sm text-purple-300 mb-2 font-medium">Email</div>
+              <div className="font-medium text-sm text-gray-300">mpranaveswar@gmail.com</div>
             </motion.a>
 
             <motion.a
@@ -79,13 +79,13 @@ export function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -10 }}
-              className="glass rounded-2xl p-8 hover:glow transition-all duration-300 text-center"
+              className="glass rounded-2xl p-8 hover:glow-blue transition-all duration-300 text-center"
             >
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center">
-                <Github className="w-8 h-8" />
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center shadow-[0_0_20px_rgba(59,130,246,0.5)]">
+                <Github className="w-8 h-8 text-white" />
               </div>
-              <div className="text-sm text-white mb-2 font-medium">GitHub</div>
-              <div className="font-medium text-sm text-white">@Pranaveswar19</div>
+              <div className="text-sm text-blue-300 mb-2 font-medium">GitHub</div>
+              <div className="font-medium text-sm text-gray-300">@Pranaveswar19</div>
             </motion.a>
 
             <motion.a
@@ -93,13 +93,13 @@ export function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -10 }}
-              className="glass rounded-2xl p-8 hover:glow transition-all duration-300 text-center"
+              className="glass rounded-2xl p-8 hover:glow-cyan transition-all duration-300 text-center"
             >
-              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center">
-                <Linkedin className="w-8 h-8" />
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 flex items-center justify-center shadow-[0_0_20px_rgba(34,211,238,0.5)]">
+                <Linkedin className="w-8 h-8 text-white" />
               </div>
-              <div className="text-sm text-white mb-2 font-medium">LinkedIn</div>
-              <div className="font-medium text-sm text-white">Pranaveswar Mulaveesala</div>
+              <div className="text-sm text-cyan-300 mb-2 font-medium">LinkedIn</div>
+              <div className="font-medium text-sm text-gray-300">Pranaveswar Mulaveesala</div>
             </motion.a>
           </motion.div>
         </div>

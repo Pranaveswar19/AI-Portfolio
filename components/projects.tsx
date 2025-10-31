@@ -13,7 +13,7 @@ export function Projects() {
   });
 
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
-  const categories = ["All", "Data & Analytics", "Research & Analysis", "Content & Marketing", "Mobile Development"];
+  const categories = ["All", "Data & Analytics", "Research & Analysis", "Content & Marketing", "Mobile Development", "AI Automation"];
 
   const filteredProjects = selectedCategory === "All" 
     ? projects 
@@ -22,8 +22,8 @@ export function Projects() {
   return (
     <section id="projects" className="py-20 relative overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-500/5 to-transparent pointer-events-none" />
-      
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-500/10 to-transparent pointer-events-none" />
+
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
           ref={ref}
@@ -32,8 +32,8 @@ export function Projects() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold mb-4 text-gray-900">Featured Projects</h2>
-          <p className="text-white text-lg max-w-2xl mx-auto font-medium">
+          <h2 className="text-5xl font-bold mb-4 gradient-text">Featured Projects</h2>
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto font-medium">
             A collection of AI-powered projects showcasing automation, data analysis, and intelligent systems
           </p>
         </motion.div>
@@ -51,8 +51,8 @@ export function Projects() {
               onClick={() => setSelectedCategory(cat)}
               className={`px-6 py-2 rounded-full transition-all duration-300 font-medium ${
                 selectedCategory === cat
-                  ? "bg-gray-900 text-white"
-                  : "glass hover:glow text-gray-900"
+                  ? "neon-button text-white"
+                  : "glass hover:glow text-gray-300"
               }`}
             >
               {cat}
@@ -69,25 +69,25 @@ export function Projects() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.1 * index, duration: 0.5 }}
               whileHover={{ y: -10, scale: 1.02 }}
-              className="glass rounded-2xl p-6 hover:glow transition-all duration-300 group"
+              className="glass rounded-2xl p-6 hover:glow transition-all duration-300 group relative"
             >
               {/* Icon & Category */}
               <div className="flex justify-between items-start mb-4">
-                <div className={`text-5xl group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`text-5xl group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(147,51,234,0.5)]`}>
                   {project.icon}
                 </div>
-                <span className="text-xs px-3 py-1 rounded-full bg-white/80 text-gray-900 font-semibold">
+                <span className="text-xs px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 font-semibold border border-purple-500/30">
                   {project.category}
                 </span>
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-bold mb-3 text-gray-900 group-hover:text-black transition-all duration-300">
+              <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-purple-300 transition-all duration-300">
                 {project.title}
               </h3>
 
               {/* Description */}
-              <p className="text-gray-800 mb-4 line-clamp-2 font-medium">
+              <p className="text-gray-300 mb-4 line-clamp-2 font-medium">
                 {project.description}
               </p>
 
@@ -96,13 +96,13 @@ export function Projects() {
                 {project.tags.slice(0, 3).map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-3 py-1 rounded-full bg-white/60 text-gray-900 font-medium"
+                    className="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 font-medium border border-blue-500/30"
                   >
                     {tag}
                   </span>
                 ))}
                 {project.tags.length > 3 && (
-                  <span className="text-xs px-3 py-1 rounded-full bg-white/60 text-gray-900 font-medium">
+                  <span className="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 font-medium border border-blue-500/30">
                     +{project.tags.length - 3}
                   </span>
                 )}
@@ -115,7 +115,7 @@ export function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-gray-900 hover:text-black font-semibold transition-colors"
+                    className="flex items-center gap-2 text-sm text-purple-300 hover:text-purple-200 font-semibold transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(147,51,234,0.8)]"
                   >
                     <Github className="w-4 h-4" />
                     Code
@@ -126,7 +126,7 @@ export function Projects() {
                     href={project.driveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-gray-900 hover:text-black font-semibold transition-colors"
+                    className="flex items-center gap-2 text-sm text-blue-300 hover:text-blue-200 font-semibold transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
                   >
                     <ExternalLink className="w-4 h-4" />
                     View Files
@@ -137,7 +137,7 @@ export function Projects() {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm text-gray-900 hover:text-black font-semibold transition-colors"
+                    className="flex items-center gap-2 text-sm text-cyan-300 hover:text-cyan-200 font-semibold transition-all duration-300 hover:drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]"
                   >
                     <ExternalLink className="w-4 h-4" />
                     Demo
@@ -162,7 +162,7 @@ export function Projects() {
             href="https://github.com/Pranaveswar19"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 glass rounded-full hover:glow transition-all duration-300"
+            className="inline-flex items-center gap-2 px-8 py-4 neon-button rounded-full transition-all duration-300 text-white font-semibold"
           >
             <Sparkles className="w-5 h-5" />
             View All on GitHub

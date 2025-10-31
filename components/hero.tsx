@@ -20,34 +20,34 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 drop-shadow-[0_0_10px_rgba(147,51,234,0.5)]">
               Mulaveesala Pranaveswar
             </h2>
-            <p className="text-lg md:text-xl text-gray-800 font-semibold">
+            <p className="text-lg md:text-xl text-purple-300 font-semibold">
               AI Engineer Intern
             </p>
           </motion.div>
 
           <motion.h1
-            className="text-6xl md:text-8xl font-bold mb-6 text-gray-900"
+            className="text-6xl md:text-8xl font-bold mb-6 gradient-text"
             initial={{ scale: 0.5 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             Portfolio
           </motion.h1>
-          
+
           <motion.p
-            className="text-xl md:text-2xl text-gray-900 font-semibold mb-4"
+            className="text-xl md:text-2xl text-white font-semibold mb-4 drop-shadow-[0_0_10px_rgba(59,130,246,0.5)]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
             Building the Future with Artificial Intelligence
           </motion.p>
-          
+
           <motion.p
-            className="text-lg text-white font-medium mb-12 max-w-2xl mx-auto"
+            className="text-lg text-gray-300 font-medium mb-12 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
@@ -66,7 +66,7 @@ export function Hero() {
               href="https://github.com/Pranaveswar19"
               target="_blank"
               rel="noopener noreferrer"
-              className="glass p-4 rounded-full hover:glow transition-all duration-300"
+              className="glass p-4 rounded-full hover:glow transition-all duration-300 text-purple-300"
             >
               <Github className="w-6 h-6" />
             </a>
@@ -74,13 +74,13 @@ export function Hero() {
               href="https://www.linkedin.com/in/pranaveswar"
               target="_blank"
               rel="noopener noreferrer"
-              className="glass p-4 rounded-full hover:glow transition-all duration-300"
+              className="glass p-4 rounded-full hover:glow-blue transition-all duration-300 text-blue-300"
             >
               <Linkedin className="w-6 h-6" />
             </a>
             <a
               href="mailto:mpranaveswar@gmail.com"
-              className="glass p-4 rounded-full hover:glow transition-all duration-300"
+              className="glass p-4 rounded-full hover:glow-cyan transition-all duration-300 text-cyan-300"
             >
               <Mail className="w-6 h-6" />
             </a>
@@ -95,13 +95,13 @@ export function Hero() {
           >
             <a
               href="#projects"
-              className="px-8 py-4 bg-gray-900 text-white rounded-full font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="px-8 py-4 neon-button text-white rounded-full font-semibold hover:scale-105 transition-all duration-300"
             >
               View Projects
             </a>
             <a
               href="#contact"
-              className="px-8 py-4 bg-white text-gray-900 rounded-full font-semibold border-2 border-gray-900 hover:glow transition-all duration-300"
+              className="px-8 py-4 glass text-white rounded-full font-semibold border-2 border-purple-500/50 hover:glow transition-all duration-300"
             >
               Contact Info
             </a>
@@ -115,7 +115,7 @@ export function Hero() {
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
       >
-        <ChevronDown className="w-8 h-8 text-white" />
+        <ChevronDown className="w-8 h-8 text-purple-400 drop-shadow-[0_0_10px_rgba(147,51,234,0.8)]" />
       </motion.div>
     </section>
   );

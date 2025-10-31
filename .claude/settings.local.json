@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for dir in 'AI Content Forge' 'AI Influencer Tracker' 'Stack Showdown' 'Vibe Coding Sprint' 'Task 10' Transcript_Agent 'SEO Task 8 Own')",
+      "Bash(do echo '=== $dir ===')",
+      "Bash(ls:*)",
+      "Bash(done)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
