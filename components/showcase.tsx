@@ -41,11 +41,11 @@ const showcaseVideos: VideoShowcase[] = [
   },
   {
     id: "video-4",
-    title: "Viral Content Replicator",
-    description: "See how AI generates high-engagement LinkedIn posts with 100/100 viral scores using proven frameworks",
-    videoUrl: "",
-    category: "Content Generation",
-    duration: "Coming Soon"
+    title: "Portfolio Walkthrough & Projects Overview",
+    description: "Complete guided tour of the portfolio website showcasing all AI projects, features, and internship work at ORANTS",
+    videoUrl: "https://www.loom.com/embed/0ff1ab499f8d41f8bd44d6889a06cdae",
+    category: "Full Showcase",
+    duration: "Demo"
   },
   {
     id: "video-5",
