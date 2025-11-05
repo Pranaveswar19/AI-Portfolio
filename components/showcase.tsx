@@ -17,43 +17,43 @@ interface VideoShowcase {
 const showcaseVideos: VideoShowcase[] = [
   {
     id: "video-1",
-    title: "Project Demo 1",
-    description: "Comprehensive walkthrough of AI automation project showcasing real-time processing",
-    videoUrl: "", // Add your Loom embed URL here: https://www.loom.com/embed/YOUR_VIDEO_ID
+    title: "AI Transcript Agent Demo",
+    description: "Watch how the multi-agent system extracts YouTube transcripts and transforms them into platform-specific content for LinkedIn, Twitter, and more",
+    videoUrl: "https://www.loom.com/embed/693876dce1b6427b8ab6390f1483a3f6",
     category: "AI Automation",
-    duration: "5:30"
+    duration: "Demo"
   },
   {
     id: "video-2",
-    title: "Project Demo 2",
-    description: "Live demonstration of data analysis and visualization capabilities",
-    videoUrl: "", // Add your Loom embed URL here
-    category: "Data Analytics",
-    duration: "4:45"
+    title: "Automation Arena Task Demo",
+    description: "Live demonstration of automation capabilities and workflow optimization in action",
+    videoUrl: "https://www.loom.com/embed/a7cd5f79ec8842ea96b3d5b9122878a7",
+    category: "AI Automation",
+    duration: "Demo"
   },
   {
     id: "video-3",
-    title: "Project Demo 3",
-    description: "Step-by-step guide through the application architecture and features",
-    videoUrl: "", // Placeholder for future video
-    category: "Development",
-    duration: "6:15"
+    title: "ChefGPT Mobile App",
+    description: "Flutter-based AI recipe generator that creates personalized recipes from your available ingredients",
+    videoUrl: "",
+    category: "Mobile Development",
+    duration: "Coming Soon"
   },
   {
     id: "video-4",
-    title: "Project Demo 4",
-    description: "Technical deep-dive into AI model implementation and optimization",
-    videoUrl: "", // Placeholder for future video
-    category: "Machine Learning",
-    duration: "7:00"
+    title: "Viral Content Replicator",
+    description: "See how AI generates high-engagement LinkedIn posts with 100/100 viral scores using proven frameworks",
+    videoUrl: "",
+    category: "Content Generation",
+    duration: "Coming Soon"
   },
   {
     id: "video-5",
-    title: "Project Demo 5",
-    description: "End-to-end demonstration of the complete project workflow",
-    videoUrl: "", // Placeholder for future video
-    category: "Full Stack",
-    duration: "8:20"
+    title: "AI Influencer Tracker",
+    description: "Discover how the system tracks and analyzes 60+ AI influencers across multiple platforms with automated data collection",
+    videoUrl: "",
+    category: "Data Analytics",
+    duration: "Coming Soon"
   }
 ];
 
