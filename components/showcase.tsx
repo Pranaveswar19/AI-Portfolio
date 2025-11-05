@@ -51,9 +51,9 @@ const showcaseVideos: VideoShowcase[] = [
     id: "video-5",
     title: "AI Influencer Tracker",
     description: "Discover how the system tracks and analyzes 60+ AI influencers across multiple platforms with automated data collection",
-    videoUrl: "",
+    videoUrl: "https://www.loom.com/embed/5b2d0c32d4404d06959cd4c912240744",
     category: "Data Analytics",
-    duration: "Coming Soon"
+    duration: "Demo"
   }
 ];
 
