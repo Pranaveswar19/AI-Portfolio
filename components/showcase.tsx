@@ -35,9 +35,9 @@ const showcaseVideos: VideoShowcase[] = [
     id: "video-3",
     title: "ChefGPT Mobile App",
     description: "Flutter-based AI recipe generator that creates personalized recipes from your available ingredients",
-    videoUrl: "",
+    videoUrl: "https://www.loom.com/embed/131ab4bf37a24b40b4b3eefd9c4e6082",
     category: "Mobile Development",
-    duration: "Coming Soon"
+    duration: "Demo"
   },
   {
     id: "video-4",
